@@ -1,0 +1,991 @@
+---
+
+# PROJECT TITLE
+
+## FESTIVAL OS
+
+**The Digital Intelligence Platform for the Kenya National Music Festival**
+
+**Working Tagline**
+
+> Preserving Performance. Measuring Excellence. Celebrating Creativity.
+
+---
+
+# PROJECT GOAL
+
+Create a beautiful, world-class digital platform for the Kenya National Music Festival that combines:
+
+* Data Collection
+* Live Festival Management
+* Artistic Storytelling
+* Analytics
+* Digital Archive
+* Community Engagement
+* AI-ready structured data
+* Historical preservation
+
+The platform should support future festivals simply by creating a new Festival Year.
+
+Everything should be configurable.
+
+---
+
+# DESIGN PHILOSOPHY
+
+The interface should feel like a blend of:
+
+* Apple
+* Spotify
+* Olympics
+* FIFA World Cup
+* National Geographic
+* Behance Portfolio
+
+NOT like a government portal.
+
+The experience should feel artistic, premium, immersive, and modern.
+
+---
+
+# COLOR SYSTEM
+
+Primary
+
+Deep Emerald (#065F46)
+
+Secondary
+
+Gold (#F59E0B)
+
+Accent
+
+Royal Purple (#7C3AED)
+
+Background
+
+Off White
+
+Text
+
+Slate
+
+Support gradients
+
+Gold → Purple
+
+Green → Emerald
+
+---
+
+Typography
+
+Display
+
+Clash Display
+
+Body
+
+Inter
+
+Numbers
+
+IBM Plex Mono
+
+---
+
+Animations
+
+Framer Motion
+
+Glassmorphism
+
+Parallax hero
+
+Smooth page transitions
+
+Micro interactions
+
+Floating cards
+
+Animated counters
+
+Timeline animations
+
+---
+
+# LANDING PAGE
+
+Huge cinematic hero.
+
+Large background image placeholder.
+
+Overlay
+
+98th Kenya National Music Festival
+
+Theme placeholder
+
+Countdown
+
+CTA
+
+Explore Festival
+
+Volunteer
+
+View Schedule
+
+Live Dashboard
+
+---
+
+Scrolling reveals
+
+Festival in Numbers
+
+Interactive Kenya Map
+
+Featured Schools
+
+Daily Highlights
+
+Upcoming Performances
+
+Latest Stories
+
+Sponsor Showcase
+
+Live Results
+
+Photo Gallery
+
+Video Highlights
+
+Footer
+
+---
+
+# USER TYPES
+
+Visitor
+
+Journalist
+
+Participant
+
+Teacher
+
+School Admin
+
+Volunteer
+
+Judge
+
+County Coordinator
+
+Festival Coordinator
+
+National Admin
+
+Super Admin
+
+---
+
+# SUPER ADMIN
+
+Only Super Admin has access to:
+
+Festival settings
+
+User creation
+
+Permissions
+
+Category creation
+
+Venue creation
+
+County creation
+
+School approval
+
+Judge assignment
+
+Result approval
+
+Story publishing
+
+Analytics
+
+Database management
+
+Media upload
+
+System configuration
+
+API Keys
+
+Audit logs
+
+Everything server-side must remain hidden from public users.
+
+---
+
+# DATABASE ARCHITECTURE
+
+Festival
+
+Year
+
+Theme
+
+Dates
+
+Logo
+
+Banner
+
+Status
+
+---
+
+Venue
+
+Hall
+
+GPS
+
+Capacity
+
+Photos
+
+---
+
+County
+
+Name
+
+Region
+
+Flag
+
+Coordinator
+
+---
+
+Institution
+
+School
+
+College
+
+University
+
+Choir
+
+Club
+
+Logo
+
+County
+
+Principal
+
+Contacts
+
+Website
+
+Socials
+
+---
+
+Participants
+
+Name
+
+Age
+
+Institution
+
+Category
+
+Photo
+
+Bio
+
+---
+
+Performance
+
+Category
+
+Venue
+
+Time
+
+School
+
+Conductor
+
+Status
+
+Livestream Link
+
+Results
+
+Photos
+
+Videos
+
+---
+
+Judge
+
+Name
+
+Specialization
+
+Assigned Categories
+
+---
+
+Scores
+
+Performance
+
+Judge
+
+Creativity
+
+Technique
+
+Presentation
+
+Originality
+
+Timing
+
+Stage Presence
+
+Comments
+
+Final Score
+
+---
+
+Awards
+
+Gold
+
+Silver
+
+Bronze
+
+Special Awards
+
+---
+
+Sponsors
+
+Logo
+
+Tier
+
+Website
+
+Description
+
+---
+
+News
+
+Headline
+
+Story
+
+Author
+
+Gallery
+
+Video
+
+Publish Date
+
+---
+
+Media
+
+Photo
+
+Video
+
+Audio
+
+Credits
+
+Tags
+
+---
+
+Documents
+
+Programs
+
+PDFs
+
+Circulars
+
+Rules
+
+Guidelines
+
+---
+
+Volunteer
+
+Name
+
+Role
+
+Assignments
+
+Availability
+
+---
+
+Analytics Cache
+
+Daily metrics
+
+Charts
+
+Historical comparisons
+
+---
+
+# DATA COLLECTION MODULE
+
+This is the heart.
+
+Beautiful tablet-friendly interface.
+
+Works perfectly on phones.
+
+Offline-first.
+
+Auto-sync.
+
+Dark Mode supported.
+
+Large buttons.
+
+Minimal typing.
+
+Designed for volunteers.
+
+---
+
+Quick Capture
+
+Choose
+
+Venue
+
+↓
+
+Category
+
+↓
+
+School
+
+↓
+
+Performance
+
+↓
+
+Judge
+
+↓
+
+Enter Scores
+
+↓
+
+Upload Photos
+
+↓
+
+Save
+
+Should take under 30 seconds.
+
+---
+
+Media Upload
+
+Drag & Drop
+
+Phone Camera
+
+Gallery
+
+Video
+
+Voice Notes
+
+Documents
+
+---
+
+Quick Story Capture
+
+Headline
+
+Quote
+
+Description
+
+Tags
+
+Photos
+
+Publish Later
+
+---
+
+Volunteer Dashboard
+
+Tasks
+
+Assigned Venues
+
+Today's Schedule
+
+Collected Data
+
+Pending Uploads
+
+Offline Queue
+
+---
+
+# LIVE DASHBOARD
+
+Animated counters
+
+Schools Present
+
+Participants
+
+Counties
+
+Performances Today
+
+Awards
+
+Judges
+
+Venues
+
+Visitors
+
+Media Uploaded
+
+Stories Published
+
+---
+
+Charts
+
+Participation by County
+
+Categories
+
+Institution Types
+
+Age Distribution
+
+Gender
+
+Performances per Venue
+
+Attendance
+
+---
+
+Map
+
+Interactive Kenya
+
+Click county
+
+See
+
+Schools
+
+Participants
+
+Awards
+
+Gallery
+
+---
+
+# FESTIVAL STORYTELLING
+
+This should feel like an online magazine.
+
+Sections
+
+Featured Story
+
+Behind the Performance
+
+Artist Spotlight
+
+School Spotlight
+
+Judge Perspective
+
+Volunteer Diaries
+
+Festival Moments
+
+Cultural Heritage
+
+Innovation
+
+Community Voices
+
+---
+
+Every story supports
+
+Images
+
+Videos
+
+Quotes
+
+Audio
+
+Maps
+
+Charts
+
+Related Performances
+
+---
+
+# DIGITAL ARCHIVE
+
+Every festival year
+
+1990
+
+...
+
+2026
+
+2027
+
+...
+
+Search
+
+School
+
+Category
+
+County
+
+Participant
+
+Award
+
+Performance
+
+Judge
+
+Theme
+
+Venue
+
+---
+
+# AI READY
+
+Everything structured.
+
+Future chatbot can answer
+
+Who won choir?
+
+How many schools came from Kisumu?
+
+Show all performances from Western Region.
+
+Most successful institution.
+
+Award history.
+
+---
+
+# MEDIA GALLERY
+
+Pinterest style masonry layout.
+
+Photos
+
+Videos
+
+Drone
+
+Backstage
+
+Opening Ceremony
+
+Awards
+
+Crowd
+
+Schools
+
+Searchable.
+
+---
+
+# LIVE RESULTS
+
+Beautiful leaderboard.
+
+Gold
+
+Silver
+
+Bronze
+
+Category
+
+Performance
+
+Judge Comments
+
+---
+
+# COMMUNITY
+
+Comments
+
+Likes
+
+Bookmarks
+
+Share
+
+Volunteer Sign-up
+
+Newsletter
+
+---
+
+# ANALYTICS
+
+PowerBI style.
+
+Heatmaps
+
+Treemaps
+
+Line charts
+
+Maps
+
+Radar charts
+
+Timeline
+
+Sunburst
+
+Bar Race
+
+Trend Analysis
+
+Participation Growth
+
+County Rankings
+
+Institution Rankings
+
+Historical Comparison
+
+---
+
+# ADMIN CMS
+
+Looks like Notion.
+
+Everything editable.
+
+Create
+
+Edit
+
+Delete
+
+Publish
+
+Archive
+
+Draft
+
+Approval Workflow
+
+---
+
+# API
+
+REST
+
+GraphQL Ready
+
+Authentication
+
+Swagger Documentation
+
+Rate limiting
+
+API Keys
+
+Public endpoints
+
+Admin endpoints
+
+---
+
+# TECHNOLOGY STACK
+
+Frontend
+
+Next.js
+
+TypeScript
+
+TailwindCSS
+
+Shadcn/UI
+
+Framer Motion
+
+TanStack Query
+
+Leaflet Maps
+
+React Hook Form
+
+Zod
+
+---
+
+Backend
+
+NestJS
+
+PostgreSQL
+
+Prisma
+
+Redis
+
+Cloudinary
+
+JWT
+
+RBAC
+
+BullMQ
+
+---
+
+Deployment
+
+Vercel
+
+Railway
+
+Supabase
+
+Cloudinary
+
+GitHub Actions
+
+---
+
+Authentication
+
+Google
+
+Microsoft
+
+Email
+
+OTP
+
+Admin Invite
+
+---
+
+Storage
+
+Images
+
+Cloudinary
+
+Documents
+
+Supabase Storage
+
+---
+
+# FUTURE FEATURES
+
+AI Story Generator
+
+Speech-to-Text
+
+Automatic Captioning
+
+OCR for Result Sheets
+
+Face Recognition (optional)
+
+Livestream Integration
+
+Festival Mobile App
+
+QR Check-in
+
+Digital Certificates
+
+Judge Tablet App
+
+Volunteer Mobile App
+
+School Portal
+
+County Portal
+
+Sponsor Dashboard
+
+---
+
+# GOLD STANDARD EXPERIENCE
+
+When someone lands on the platform, they should feel like they're entering a living digital museum rather than reading an event website. Every interaction should reinforce the festival's mission of celebrating creativity while making it measurable and discoverable.
+
+The architecture should be **multi-tenant**: creating the **99th Kenya National Music Festival** should require only a new festival record in the database. All pages, dashboards, schedules, categories, venues, stories, analytics, and media should automatically filter by the selected festival year. Nothing should be hardcoded to 2026.
+
+Finally, build with scalability in mind. The same platform should be reusable for county festivals, regional festivals, national competitions, cultural expos, theatre festivals, poetry slams, dance competitions, and even sports tournaments with minimal configuration changes. The goal is not just to document one event—it is to create Kenya's next-generation digital platform for managing, preserving, and telling the story of its creative and cultural events.
