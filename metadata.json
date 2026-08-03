@@ -1,0 +1,6 @@
+{
+  "name": "Festival OS - Kenya National Music Festival",
+  "description": "The Digital Intelligence Platform for the Kenya National Music Festival: Live Management, Interactive County Map, Digital Archives, Tablet Data Capture, Magazine Stories, and Analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
