@@ -101,11 +101,11 @@ export const FestivalInNumbers: React.FC<FestivalInNumbersProps> = ({ festival }
                 className="group relative bg-[#09090b] rounded-xl p-5 shadow-sm border border-white/10 hover:border-white/25 transition-all overflow-hidden"
               >
                 {/* Thin Top Accent Border */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-white/40 via-amber-400 to-white/10" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#006600] via-white to-[#BB0000]" />
 
                 <div className="flex items-start justify-between">
                   <div className="space-y-1">
-                    <div className="text-3xl font-bold font-mono text-white tracking-tight group-hover:text-amber-300 transition-colors">
+                    <div className="text-3xl font-bold font-mono text-white tracking-tight group-hover:text-[#4ade80] transition-colors">
                       {stat.value}
                     </div>
                     <div className="text-xs font-mono tracking-wider uppercase text-zinc-300">
@@ -113,7 +113,7 @@ export const FestivalInNumbers: React.FC<FestivalInNumbersProps> = ({ festival }
                     </div>
                   </div>
 
-                  <div className="p-2.5 rounded-lg bg-[#121215] border border-white/10 text-amber-400 shadow-md">
+                  <div className="p-2.5 rounded-lg bg-[#121215] border border-[#006600]/30 text-[#4ade80] shadow-md">
                     <Icon className="w-4 h-4" />
                   </div>
                 </div>

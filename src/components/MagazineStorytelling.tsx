@@ -74,7 +74,7 @@ export const MagazineStorytelling: React.FC<MagazineStorytellingProps> = ({ stor
               onClick={() => setActiveCategory(cat)}
               className={`px-3.5 py-1.5 rounded-md tracking-wider transition-all whitespace-nowrap ${
                 activeCategory === cat
-                  ? 'bg-white text-black font-bold shadow-md'
+                  ? 'bg-[#006600] text-white font-bold shadow-md'
                   : 'bg-[#09090b] text-white/70 border border-white/10 hover:bg-white/10 hover:text-white'
               }`}
             >
@@ -96,7 +96,7 @@ export const MagazineStorytelling: React.FC<MagazineStorytellingProps> = ({ stor
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/40 to-transparent lg:hidden" />
-              <div className="absolute top-4 left-4 bg-white text-black font-mono font-bold text-[9px] uppercase tracking-widest px-3 py-1 rounded shadow">
+              <div className="absolute top-4 left-4 bg-[#006600] text-white font-mono font-bold text-[9px] uppercase tracking-widest px-3 py-1 rounded shadow">
                 Featured Cover Story
               </div>
             </div>

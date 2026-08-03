@@ -126,7 +126,7 @@ export const LiveDashboard: React.FC<LiveDashboardProps> = ({
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3 py-1.5 rounded-md text-[11px] uppercase tracking-wider transition-all ${
                   selectedCategory === cat
-                    ? 'bg-white text-black font-bold shadow'
+                    ? 'bg-[#006600] text-white font-bold shadow'
                     : 'bg-[#050505] text-white/70 border border-white/10 hover:bg-white/10 hover:text-white'
                 }`}
               >
@@ -142,7 +142,7 @@ export const LiveDashboard: React.FC<LiveDashboardProps> = ({
                 onClick={() => setSelectedTier(tier)}
                 className={`px-3 py-1.5 rounded-md text-[11px] uppercase tracking-wider transition-all ${
                   selectedTier === tier
-                    ? 'bg-amber-400 text-black font-bold'
+                    ? 'bg-[#BB0000] text-white font-bold'
                     : 'bg-[#050505] text-white/60 border border-white/10 hover:bg-white/10'
                 }`}
               >

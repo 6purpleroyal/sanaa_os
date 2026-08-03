@@ -83,8 +83,8 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Top Banner Bar */}
       <div className="bg-[#09090b] border-b border-white/10 text-white text-xs py-1.5 px-4 flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-3">
-          <span className="font-mono text-[10px] tracking-[0.2em] text-amber-400 uppercase flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping" />
+          <span className="font-mono text-[10px] tracking-[0.2em] text-[#4ade80] uppercase flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] animate-ping" />
             KNMF Intelligence Platform
           </span>
           <span className="hidden sm:inline-block text-white/20">|</span>
@@ -118,7 +118,7 @@ export const Header: React.FC<HeaderProps> = ({
                       setFestDropdownOpen(false);
                     }}
                     className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-white/5 transition-colors ${
-                      f.id === currentFestival.id ? 'bg-white/10 text-amber-300 font-semibold' : 'text-zinc-300'
+                      f.id === currentFestival.id ? 'bg-[#006600]/20 text-[#4ade80] font-semibold' : 'text-zinc-300'
                     }`}
                   >
                     <div>
@@ -126,7 +126,7 @@ export const Header: React.FC<HeaderProps> = ({
                       <div className="text-[10px] font-mono text-white/50 truncate max-w-[180px]">{f.hostVenue}</div>
                     </div>
                     <span className={`text-[9px] font-mono uppercase px-1.5 py-0.5 rounded border ${
-                      f.status === 'Active' ? 'bg-amber-500/10 text-amber-300 border-amber-500/30' :
+                      f.status === 'Active' ? 'bg-[#006600]/20 text-[#4ade80] border-[#006600]/30' :
                       f.status === 'Upcoming' ? 'bg-white/5 text-zinc-300 border-white/15' : 'bg-black text-white/40 border-white/10'
                     }`}>
                       {f.status}
@@ -141,11 +141,11 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative">
             <button
               onClick={() => setRoleDropdownOpen(!roleDropdownOpen)}
-              className="flex items-center gap-1.5 bg-[#121215] hover:bg-[#1a1a1e] border border-amber-500/30 rounded-md px-2.5 py-0.5 text-amber-300 transition-all text-[11px] font-mono tracking-wide"
+              className="flex items-center gap-1.5 bg-[#121215] hover:bg-[#1a1a1e] border border-[#006600]/40 rounded-md px-2.5 py-0.5 text-[#4ade80] transition-all text-[11px] font-mono tracking-wide"
             >
-              <ShieldAlert className="w-3 h-3 text-amber-400" />
+              <ShieldAlert className="w-3 h-3 text-[#4ade80]" />
               <span>Role: {userRole}</span>
-              <ChevronDown className="w-3 h-3 text-amber-400/60" />
+              <ChevronDown className="w-3 h-3 text-[#4ade80]/60" />
             </button>
 
             {roleDropdownOpen && (
@@ -161,11 +161,11 @@ export const Header: React.FC<HeaderProps> = ({
                       setRoleDropdownOpen(false);
                     }}
                     className={`w-full text-left px-3 py-1.5 text-xs font-mono hover:bg-white/5 transition-colors flex items-center justify-between ${
-                      userRole === role ? 'text-amber-300 font-bold bg-white/10' : 'text-zinc-300'
+                      userRole === role ? 'text-[#4ade80] font-bold bg-white/10' : 'text-zinc-300'
                     }`}
                   >
                     <span>{role}</span>
-                    {userRole === role && <span className="text-amber-400">✓</span>}
+                    {userRole === role && <span className="text-[#4ade80]">✓</span>}
                   </button>
                 ))}
               </div>
@@ -220,14 +220,14 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => setActiveTab(item.id)}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] font-mono tracking-wider uppercase transition-all relative ${
                   isActive
-                    ? 'bg-white text-black font-bold shadow-md'
+                    ? 'bg-[#006600] text-white font-bold shadow-md shadow-green-900/40'
                     : 'text-white/70 hover:bg-white/10 hover:text-white'
                 }`}
               >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-black' : 'text-white/50'}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-[#4ade80]'}`} />
                 <span>{item.label}</span>
                 {item.badge && (
-                  <span className="ml-0.5 text-[8px] bg-amber-400 text-black font-bold px-1 rounded uppercase tracking-tighter">
+                  <span className="ml-0.5 text-[8px] bg-[#BB0000] text-white font-bold px-1 rounded uppercase tracking-tighter">
                     {item.badge}
                   </span>
                 )}
@@ -293,11 +293,11 @@ export const Header: React.FC<HeaderProps> = ({
                   }}
                   className={`flex items-center gap-2 p-2.5 rounded-md text-xs font-semibold uppercase tracking-wider transition-all ${
                     isActive
-                      ? 'bg-white text-black font-bold'
+                      ? 'bg-[#006600] text-white font-bold shadow-md'
                       : 'bg-[#121215] text-white/80 border border-white/10 hover:bg-white/10'
                   }`}
                 >
-                  <Icon className="w-3.5 h-3.5 text-amber-400" />
+                  <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-[#4ade80]'}`} />
                   <span>{item.label}</span>
                 </button>
               );
